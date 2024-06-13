@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b65e2bb4-e397-45ae-839d-2bc7a2cc1b79/deploy-status)](https://app.netlify.com/sites/spullekesnet/deploys)
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
