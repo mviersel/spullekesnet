@@ -5,11 +5,6 @@
             <NuxtLink to="/"><img src="../assets/img/Spulleke-logo-transparent.png" alt="logo" class='w-40' /></NuxtLink>
             <div class="pl-8">
                 <ul class='lg:flex lg:gap-x-8 max-lg:space-y-2'>
-                    <li class='mb-6 hidden max-lg:block'>
-                        <a href="javascript:void(0)"><img src="https://readymadeui.com/readymadeui.svg" alt="logo"
-                                class='w-36' />
-                        </a>
-                    </li>
                     <li class='max-lg:border-b max-lg:py-3'>
                         <NuxtLink to="/" class='hover:text-[#007bff] block font-medium text-[15px]'>Home
                         </NuxtLink>
