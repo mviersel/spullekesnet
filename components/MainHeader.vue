@@ -27,7 +27,7 @@
                         </li>
                         <!-- Search bar -->
                         <li class='max-lg:py-3'>
-                                <input type="text" class="block rounded-lg px-2 py-1 w-80 text-black"
+                                <input type="text" class="block rounded-lg px-2 py-1 w-80 text-black bg-siteMain-200"
                                     placeholder="Zoeken naar..">
                         </li>
                     </ul>
@@ -38,7 +38,7 @@
                     <div v-if="user" class="flex items-center gap-6">
                         <p class="font-light">Welcome, {{ user.email }}</p>
                         <button @click="handleLogout"
-                            class='hover:text-[#007bff] block font-medium text-[15px]'>Logout</button>
+                            class='hover:text-siteMain-300 block font-medium text-[15px]'>Logout</button>
                     </div>
                     <!-- Else show login/register button -->
                     <div v-else>
@@ -64,7 +64,7 @@
                 <!-- Search bar -->
                 <div class=" pt-4 w-full flex justify-center ">
                     <input type="searchInput" name="" id="" placeholder="Zoeken naar..."
-                        class="h-10 px-2 rounded-lg block w-full mx-2">
+                        class="h-10 px-2 rounded-lg block w-full mx-2 bg-siteMain-200">
                 </div>
                 <!-- Menu items -->
                 <div class="grid grid-cols-3 grid-container h-14 text-white">
@@ -80,17 +80,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <ul class="flex place-content-evenly">
-                        <li>
-                            <NuxtLink to="/">Home</NuxtLink>
-                        </li>
-                        <li>
-                            <NuxtLink to="/products">Producten</NuxtLink>
-                        </li>
-                    </ul> -->
-
-
     </header>
 </template>
 
