@@ -1,32 +1,33 @@
 <template>
     <header
-        class='flex border-b py-4 px-4 sm:px-10 bg-gray-900 font-sans min-h-[70px] tracking-wide relative z-50 text-white'>
+        class='flex py-4 px-4 sm:px-10 bg-siteMain-100 font-sans min-h-[70px] tracking-wide relative z-50 text-white border-b-4 border-siteMain-300'>
         <div class='flex flex-wrap items-center gap-4 w-full'>
-            <NuxtLink to="/"><img src="../assets/img/Spulleke-logo-transparent.png" alt="logo" class='w-40' /></NuxtLink>
-            <div class="pl-8">
-                <ul class='lg:flex lg:gap-x-8 max-lg:space-y-2'>
-                    <li class='max-lg:border-b max-lg:py-3'>
-                        <NuxtLink to="/" class='hover:text-[#007bff] block font-medium text-[15px]'>Home
+            <NuxtLink to="/"><img src="../assets/img/Spulleke-logo-transparent.png" alt="logo" class='w-40' />
+            </NuxtLink>
+            <div class="border-l border-siteMain-200 h-6 max-lg:hidden opacity-45"></div>
+            <div class="hidden lg:block">
+                <ul class='flex gap-x-8 max-lg:space-y-2'>
+                    <li class='max-lg:py-3'>
+                        <NuxtLink to="/" class='hover:text-siteMain-300 block font-medium text-[15px]'>Home
                         </NuxtLink>
                     </li>
-                    <li class='max-lg:border-b max-lg:py-3'>
-                        <NuxtLink to="/products" class='hover:text-[#007bff] block font-medium text-[15px]'>
+                    <li class='max-lg:py-3'>
+                        <NuxtLink to="/products" class='hover:text-siteMain-300 block font-medium text-[15px]'>
                             Products
                         </NuxtLink>
                     </li>
-                    <li class='max-lg:border-b max-lg:py-3'>
-                        <NuxtLink to="/" class='hover:text-[#007bff] block font-medium text-[15px]'>
+                    <li class='max-lg:py-3'>
+                        <NuxtLink to="/" class='hover:text-siteMain-300 block font-medium text-[15px]'>
                             Account
                         </NuxtLink>
                     </li>
-                    <li class='max-lg:border-b max-lg:py-3'>
-                        <NuxtLink to="/" class='hover:text-[#007bff] block font-medium text-[15px]'>Edit
+                    <li class='max-lg:py-3'>
+                        <NuxtLink to="/" class='hover:text-siteMain-300 block font-medium text-[15px]'>Edit
                         </NuxtLink>
                     </li>
                 </ul>
             </div>
 
-            <div class="border-l border-[#333] h-6 max-lg:hidden"></div>
 
             <div class='flex items-center ml-auto space-x-6'>
                 <!-- check if the user is loggen in. If yes then show user -->
@@ -38,8 +39,8 @@
                 <!-- Else show login/register button -->
                 <div v-else>
                     <p class="flex gap-2 items-center"><a href="/login"
-                            class='hover:text-[#007bff] block font-medium text-[15px]'>Login</a> or <a href="/register"
-                            class='hover:text-[#007bff] block font-medium text-[15px]'>Register</a></p>
+                            class='hover:text-siteMain-300 block font-medium text-[15px]'>Login</a> or <a href="/register"
+                            class='hover:text-siteMain-300 block font-medium text-[15px]'>Register</a></p>
                 </div>
             </div>
         </div>
