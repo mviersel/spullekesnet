@@ -10,6 +10,7 @@ export default defineNuxtConfig({
       "start_url": ".",
       "display": "standalone",
       "background_color": "#12355B",
+      "theme_color": "#12355B",
       icons: [
         {
           src: "public/android-chrome-192x192.png",
@@ -30,6 +31,7 @@ export default defineNuxtConfig({
           src: "public/android-chrome-512x512.png",
           sizes: "512x512",
           type: "image/png",
+          purpose: "any",
         },
       ]
     }
