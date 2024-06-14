@@ -75,3 +75,8 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+Run project on mobile devices over the network?
+```
+npm run dev -- --host
+```
