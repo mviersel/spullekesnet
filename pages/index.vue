@@ -6,6 +6,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+    layout: "default",
+})
 
 const MainHeaderTitle = "Hallo daar"
 
