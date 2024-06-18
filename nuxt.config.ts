@@ -47,6 +47,9 @@ export default defineNuxtConfig({
               200: "#F0F2EF",
               300: "#FF206E"
             }
+          },
+          "backgroundImage": {
+            'hero-banner': "url(https://images.unsplash.com/photo-1582389197103-1ac281b8a6c9?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
           }
         }
       }
@@ -54,37 +57,3 @@ export default defineNuxtConfig({
   }
 }
 )
-
-
-// "icons": [
-//   {
-//     "src": "images/touch/homescreen48.png",
-//     "sizes": "48x48",
-//     "type": "image/png"
-//   },
-//   {
-//     "src": "images/touch/homescreen72.png",
-//     "sizes": "72x72",
-//     "type": "image/png"
-//   },
-//   {
-//     "src": "images/touch/homescreen96.png",
-//     "sizes": "96x96",
-//     "type": "image/png"
-//   },
-//   {
-//     "src": "images/touch/homescreen144.png",
-//     "sizes": "144x144",
-//     "type": "image/png"
-//   },
-//   {
-//     "src": "images/touch/homescreen168.png",
-//     "sizes": "168x168",
-//     "type": "image/png"
-//   },
-//   {
-//     "src": "images/touch/homescreen192.png",
-//     "sizes": "192x192",
-//     "type": "image/png"
-//   }
-// ],

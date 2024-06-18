@@ -1,11 +1,11 @@
 <template>
-    <header>
+    <header class="sticky top-0 z-50">
         <!-- Pc header -->
         <div
             class='hidden lg:block py-4 px-4 sm:px-10 bg-siteMain-100 font-sans min-h-[70px] tracking-wide sticky z-50 text-white border-b-4 border-siteMain-300 top-0'>
             <div class='flex flex-wrap items-center gap-4 w-full'>
                 <!-- Logo -->
-                <NuxtLink to="/"><img src="../assets/img/Spulleke-logo-transparent.png" alt="logo" class='w-40' />
+                <NuxtLink to="/"><img src="../assets/img/Spulleke-logo-transparent.png" alt="logo" class='w-40 hover:scale-110 duration-150 transition' />
                 </NuxtLink>
                 <div class="border-l border-siteMain-200 h-6 max-lg:hidden opacity-45"></div>
                 <!-- Menu items -->
