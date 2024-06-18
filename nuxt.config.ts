@@ -13,25 +13,25 @@ export default defineNuxtConfig({
       "theme_color": "#12355B",
       icons: [
         {
-          src: "./public/spullekes-icons_64x64.png",
+          src: "/public/spullekes-icons_64x64.png",
           sizes: "64x64",
           type: "image/png",
           purpose: "any",
         },
         {
-          src: "./public/spullekes-icons_144x144.png",
+          src: "/public/spullekes-icons_144x144.png",
           sizes: "144x144",
           type: "image/png",
           purpose: "any",
         },
         {
-          src: "./public/spullekes-icons_192x192.png",
+          src: "/public/spullekes-icons_192x192.png",
           sizes: "192x192",
           type: "image/png",
           purpose: "any",
         },
         {
-          src: "./public/spullekes-icons_512x512.png",
+          src: "/public/spullekes-icons_512x512.png",
           sizes: "512x512",
           type: "image/png",
           purpose: "any",
