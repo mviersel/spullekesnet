@@ -1,7 +1,6 @@
 <template>
     <!-- component -->
-    <div
-        class="mt-5 w-80 transform overflow-hidden rounded-lg bg-siteMain-100 shadow-md duration-300 hover:shadow-lg">
+    <div class="mt-5 w-80 transform overflow-hidden rounded-lg bg-siteMain-100 shadow-md duration-300 hover:shadow-lg">
         <img class="h-48 w-full object-cover object-center"
             src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             alt="Product Image" />
@@ -14,7 +13,9 @@
                 <p class="ml-auto text-base font-medium text-green-500">30% off</p>
             </div>
             <div>
-                <button class="w-full bg-siteMain-200 rounded-md text-center my-2 hover:bg-siteMain-300 hover:text-white">Buy now</button>
+                <button
+                    class="w-full bg-siteMain-200 rounded-md text-center my-2 hover:bg-siteMain-300 hover:text-white">Buy
+                    now</button>
             </div>
         </div>
     </div>
