@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Items List</h1>
+        <h1>Items List title</h1>
         <ul>
             <li v-for="product in products" :key="product.id">
                 {{ product.title }}
@@ -19,6 +19,7 @@ const products = ref([]);
 
 const fetchItems = async () => {
     products.value = await getItems();
+    console.log(products);
 };
 
 onMounted(fetchItems);
