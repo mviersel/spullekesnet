@@ -1,6 +1,6 @@
 <template>
     <div>
-Dit is het product.
+        Dit is het product.
     </div>
 </template>
 

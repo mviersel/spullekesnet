@@ -1,11 +1,9 @@
 <template>
     <div>
-        <h1>Items List title</h1>
-        <ul>
-            <li v-for="product in products" :key="product.id">
-                {{ product.title }}
-            </li>
-        </ul>
+        <!-- <h1>Items List title</h1> -->
+        <div v-for="product in products" :key="product.id">
+            <productCards :product="product"/>
+        </div>
     </div>
 </template>
 
