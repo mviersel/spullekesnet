@@ -10,7 +10,7 @@
                 <p class="ml-auto text-base font-medium text-green-500">30% off</p>
             </div>
             <div>
-                <NuxtLink :to="`/products/${product.id}`">
+                <NuxtLink :to="`/products/${product.id}`" :product="product">
                     <button
                         class="w-full bg-siteMain-200 rounded-md text-center my-2 hover:bg-siteMain-300 hover:text-white">Buy
                         now</button>
