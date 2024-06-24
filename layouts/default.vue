@@ -3,6 +3,7 @@
     <div class="">
         <slot />
     </div>
+    <MainFooter />
 </template>
 
 <script setup>

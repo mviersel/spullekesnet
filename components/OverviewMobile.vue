@@ -147,8 +147,11 @@ const editItem = (product) => {
 };
 
 const removeItem = async (id) => {
-    await deleteItem(id);
-    fetchItems();
+    const confirmed = window.confirm("Are you sure you want to delete this item?");
+    if (confirmed) {
+        await deleteItem(id);
+        fetchItems();
+    }
 };
 
 onMounted(fetchItems);
