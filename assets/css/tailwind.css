@@ -8,3 +8,9 @@
     align-content: space-evenly;
     align-items: center;
 }
+
+.overview-border {
+    border-bottom-width: 1px;
+    border-color: gray;
+    width: 100%;
+}
