@@ -7,7 +7,7 @@
             <div class="flex items-center">
                 <p class="mr-2 text-lg font-semibold text-white">{{ product.newPrice }}</p>
                 <p class="text-base  font-medium line-through text-gray-400">{{ product.oldPrice }}</p>
-                <p class="ml-auto text-base font-medium text-green-500">30% off</p>
+                <p class="ml-auto text-base font-medium text-green-500">Spulleke denk!</p>
             </div>
             <div>
                 <NuxtLink :to="`/products/${product.id}`" :product="product">
