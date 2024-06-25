@@ -1,11 +1,12 @@
 <template>
     <header class="sticky top-0 z-50">
-        <!-- Pc header -->
+        <!-- PC header -->
         <div
             class='hidden lg:block py-4 px-4 sm:px-10 bg-siteMain-100 font-sans min-h-[70px] tracking-wide sticky z-50 text-white border-b-4 border-siteMain-300 top-0'>
             <div class='flex flex-wrap items-center gap-4 w-full'>
                 <!-- Logo -->
-                <NuxtLink to="/"><img src="../assets/img/Spulleke-logo-transparent.png" alt="logo" class='w-40 hover:scale-110 duration-150 transition' />
+                <NuxtLink to="/"><img src="../assets/img/Spulleke-logo-transparent.png" alt="logo"
+                        class='w-40 hover:scale-110 duration-150 transition' />
                 </NuxtLink>
                 <div class="border-l border-siteMain-200 h-6 max-lg:hidden opacity-45"></div>
                 <!-- Menu items -->
@@ -27,20 +28,20 @@
                         </li>
                         <!-- Search bar -->
                         <li class='max-lg:py-3'>
-                                <input type="text" class="block rounded-lg px-2 py-1 w-80 text-black bg-siteMain-200"
-                                    placeholder="Zoeken naar..">
+                            <input type="text" class="block rounded-lg px-2 py-1 w-80 text-black bg-siteMain-200"
+                                placeholder="Zoeken naar..">
                         </li>
                     </ul>
                 </div>
 
                 <div class='flex items-center ml-auto space-x-6'>
-                    <!-- check if the user is loggen in. If yes then show user -->
+                    <!-- Check if the user is logged in. If yes, then show user -->
                     <div v-if="user" class="flex items-center gap-6">
                         <p class="font-light">Welcome, {{ user.email }}</p>
                         <button @click="handleLogout"
                             class='hover:text-siteMain-300 block font-medium text-[15px]'>Logout</button>
                     </div>
-                    <!-- Else show login/register button -->
+                    <!-- Else, show login/register button -->
                     <div v-else>
                         <p class="flex gap-2 items-center"><a href="/login"
                                 class='hover:text-siteMain-300 block font-medium text-[15px]'>Login</a> or <a
@@ -88,19 +89,22 @@ import { ref, onMounted } from 'vue';
 import { logout } from '~/services/AuthService';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
+// Reactive variable to hold the current user
 const user = ref(null);
+
+// Get the Firebase authentication instance
 const auth = getAuth();
 
+// Function to handle the logout process
 const handleLogout = async () => {
-    await logout();
-    user.value = null;
+    await logout(); // Call the logout function from the AuthService
+    user.value = null; // After logout, set the user to null
 };
 
+// On component mount, listen for changes in the authentication state
 onMounted(() => {
     onAuthStateChanged(auth, (currentUser) => {
-        user.value = currentUser;
+        user.value = currentUser; // Whenever the user state changes, update the user variable
     });
 });
 </script>
-
-<style scoped></style>
